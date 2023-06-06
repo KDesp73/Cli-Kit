@@ -7,12 +7,12 @@ set(SOURCES
    
 
     src/text/text.hpp
-    src/${LIB_DIR}/text/text.cpp
+    src/text/text.cpp
 
-    src/${LIB_DIR}/menu/menu.hpp
-    src/${LIB_DIR}/menu/menu.cpp
-    src/${LIB_DIR}/menu/menu_utils.hpp
-    src/${LIB_DIR}/menu/menu_utils.cpp
+    src/menu/menu.hpp
+    src/menu/menu.cpp
+    src/menu/menu_utils.hpp
+    src/menu/menu_utils.cpp
 )
 
 add_library(AnsiTextManipulationLibrary ${SOURCES})
