@@ -20,7 +20,7 @@ target_link_libraries(Your_Project AnsiTextManipulationLibrary)
 
 ## Documentation
 
-[Check it here]([https://github.com/KDesp73/Ansi-Text-Manipulation-Library](https://github.com/KDesp73/Ansi-Text-Manipulation-Library/blob/main/Documentation.md))
+[Check it here](https://github.com/KDesp73/Ansi-Text-Manipulation-Library/blob/main/Documentation.md)
 
 ## File Tree
 
