@@ -18,6 +18,8 @@ include(path_to_library/CMakeLists.txt)
 target_link_libraries(Your_Project AnsiTextManipulationLibrary)
 ```
 
+3. To use the classes and methods of this library include the `ansi_lib.hpp` file
+
 ## Documentation
 
 [Check it here](https://github.com/KDesp73/Ansi-Text-Manipulation-Library/blob/main/Documentation.md)
