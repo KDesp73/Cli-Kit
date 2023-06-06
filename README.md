@@ -28,17 +28,18 @@ target_link_libraries(Your_Project AnsiTextManipulationLibrary)
 
 ```
 .
-└── CMakeLists.txt
-    └── src
-        ├── ansi_lib.hpp
-        ├── menu
-        │   ├── menu.cpp
-        │   ├── menu.hpp
-        │   ├── menu_utils.cpp
-        │   └── menu_utils.hpp
-        └── text
-            ├── text.cpp
-            └── text.hpp
+├── CMakeLists.txt
+└── src
+    ├── ansi_lib.hpp
+    ├── menu
+    │   ├── menu.cpp
+    │   ├── menu.hpp
+    │   ├── menu_utils.cpp
+    │   └── menu_utils.hpp
+    └── text
+        ├── text.cpp
+        └── text.hpp
+
 ```
 
 ## License
