@@ -31,7 +31,6 @@ target_link_libraries(Your_Project AnsiTextManipulationLibrary)
 └── CMakeLists.txt
     └── src
         ├── ansi_lib.hpp
-        ├── main.cpp
         ├── menu
         │   ├── menu.cpp
         │   ├── menu.hpp
