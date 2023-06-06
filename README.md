@@ -39,3 +39,7 @@ target_link_libraries(Your_Project AnsiTextManipulationLibrary)
             ├── text.cpp
             └── text.hpp
 ```
+
+## License
+
+This work is published under the [GNU GENERAL PUBLIC LICENSE](https://github.com/KDesp73/Ansi-Text-Manipulation-Library/blob/main/LICENSE)
