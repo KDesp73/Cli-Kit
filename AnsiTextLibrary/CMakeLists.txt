@@ -3,16 +3,18 @@ cmake_minimum_required(VERSION 3.16)
 project(AnsiTextManipulationLibrary)
 set(CMAKE_CXX_STANDARD 14)
 
+set(LIB_DIR ".")
+
 set(SOURCES
    
 
-    src/text/text.hpp
-    src/text/text.cpp
+    ${LIB_DIR}/src/text/text.hpp
+    ${LIB_DIR}/src/text/text.cpp
 
-    src/menu/menu.hpp
-    src/menu/menu.cpp
-    src/menu/menu_utils.hpp
-    src/menu/menu_utils.cpp
+    ${LIB_DIR}/src/menu/menu.hpp
+    ${LIB_DIR}/src/menu/menu.cpp
+    ${LIB_DIR}/src/menu/menu_utils.hpp
+    ${LIB_DIR}/src/menu/menu_utils.cpp
 )
 
 add_library(AnsiTextManipulationLibrary ${SOURCES})
