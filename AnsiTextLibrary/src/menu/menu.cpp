@@ -40,6 +40,7 @@ void AnsiTextLib::menu(int bgColor, vector<string> options, void (*handleOptions
             case ENTER:
                 menuActive = false;
                 Text::clearScreen();
+                enableInputBuffering();
                 handleOptionsFunc(selectedItem);
                 break;
         }
