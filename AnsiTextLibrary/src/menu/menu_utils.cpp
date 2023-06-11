@@ -17,7 +17,7 @@ using namespace std;
 using namespace AnsiTextLib;
 
 
-void enableInputBuffering(){
+void Text::enableInputBuffering(){
     #ifdef _WIN32
         // Enable console input buffering
         SetConsoleMode(hInput, mode);
@@ -31,7 +31,7 @@ void enableInputBuffering(){
     cout << "\e[?25h"; // Show the cursor
 }
 
-void disableInputBuffering(){
+void Text::disableInputBuffering(){
     #ifdef _WIN32
         // Disable console input buffering
         DWORD mode;

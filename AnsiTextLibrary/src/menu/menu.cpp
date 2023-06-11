@@ -6,8 +6,8 @@
 
 using namespace AnsiTextLib;
 
-void AnsiTextLib::menu(int bgColor, vector<string> options, void (*handleOptionsFunc)(int selectedOption)){
-    disableInputBuffering();
+void AnsiTextLib::menu(string title, int bgColor, vector<string> options, void (*handleOptionsFunc)(int selectedOption)){
+    Text::disableInputBuffering();
 
     int numOfOptions = options.size();
 
@@ -22,6 +22,7 @@ void AnsiTextLib::menu(int bgColor, vector<string> options, void (*handleOptions
 
     while (menuActive) {
         Text::clearScreen();
+        cout << title << endl;
 
         // Print the options
         for (int i = 0; i < numOfOptions; i++){
@@ -40,11 +41,11 @@ void AnsiTextLib::menu(int bgColor, vector<string> options, void (*handleOptions
             case ENTER:
                 menuActive = false;
                 Text::clearScreen();
-                enableInputBuffering();
+                Text::enableInputBuffering();
                 handleOptionsFunc(selectedItem);
                 break;
         }
 
     }
-    enableInputBuffering();
+    Text::enableInputBuffering();
 }
