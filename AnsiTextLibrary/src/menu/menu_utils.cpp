@@ -20,9 +20,14 @@ using namespace AnsiTextLib;
 void Text::enableInputBuffering(){
     #ifdef _WIN32
         // Enable console input buffering
-        DWORD mode;
-        HANDLE hInput = GetStdHandle(STD_INPUT_HANDLE);
-        SetConsoleMode(hInput, mode);
+        HANDLE hConsoleInput = GetStdHandle(STD_INPUT_HANDLE);
+
+        DWORD consoleMode;
+        GetConsoleMode(hConsoleInput, &consoleMode);
+
+        consoleMode |= ENABLE_LINE_INPUT;
+
+        SetConsoleMode(hConsoleInput, consoleMode);
     #else
         termios term;
         tcgetattr(STDIN_FILENO, &term);
