@@ -9,9 +9,9 @@
 
 #include <iostream>
 
-#include "./menu.hpp"
-#include "./menu_utils.hpp"
-#include "../text/text.hpp"
+#include "menu.h"
+#include "menu_utils.h"
+#include "text.h"
 
 using namespace std;
 using namespace AnsiTextLib;
