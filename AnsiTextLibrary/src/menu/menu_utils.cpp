@@ -9,7 +9,7 @@
 
 #include <iostream>
 
-#include "./menu.h"
+#include "./menu.hpp"
 #include "./menu_utils.hpp"
 #include "../text/text.hpp"
 
@@ -20,7 +20,14 @@ using namespace AnsiTextLib;
 void Text::enableInputBuffering(){
     #ifdef _WIN32
         // Enable console input buffering
-        SetConsoleMode(hInput, mode);
+        HANDLE hConsoleInput = GetStdHandle(STD_INPUT_HANDLE);
+
+        DWORD consoleMode;
+        GetConsoleMode(hConsoleInput, &consoleMode);
+
+        consoleMode |= ENABLE_LINE_INPUT;
+
+        SetConsoleMode(hConsoleInput, consoleMode);
     #else
         termios term;
         tcgetattr(STDIN_FILENO, &term);
