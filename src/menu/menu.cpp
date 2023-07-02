@@ -1,6 +1,6 @@
-#include "./menu.hpp"
-#include "./menu_utils.hpp"
-#include "../text/text.hpp"
+#include "menu.h"
+#include "menu_utils.h"
+#include "text.h"
 
 #include <iostream>
 

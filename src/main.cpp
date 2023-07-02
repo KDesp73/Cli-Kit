@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "ansi_lib.hpp"
+#include "ansi_lib.h"
 
 
 void handleOptions(int option){
@@ -20,7 +20,7 @@ void handleOptions(int option){
 }
 
 int main(){
-    AnsiTextLib::menu(4, vector<string>{"Option 1", "Option 2", "Option 3"}, &handleOptions);
+    AnsiTextLib::menu("title", 4, vector<string>{"Option 1", "Option 2", "Option 3"}, &handleOptions);
 
     cout << AnsiTextLib::Text::b_blue + "Text" + AnsiTextLib::Text::normal << endl;
 
