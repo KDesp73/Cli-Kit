@@ -1,4 +1,4 @@
 #pragma once
 
-#include "text.h"
-#include "menu.h"
+#include "src/include/text.h"
+#include "src/include/menu.h"
