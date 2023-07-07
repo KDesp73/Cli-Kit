@@ -13,35 +13,46 @@ git clone https://github.com/KDesp73/Ansi-Text-Manipulation-Library
 2. In your `CMakeLists.txt` file include the library
 
 ```cmake
-include(path_to_library/CMakeLists.txt)
+add_subdirectory(Ansi-Text-Manipulation-Library)
 
-target_link_libraries(Your_Project AnsiTextManipulationLibrary)
+target_link_libraries(${PROJECT_NAME} AnsiTextManipulationLibrary)
 ```
 
 3. To use the classes and methods of this library include the `ansi_lib.hpp` file
 
 ## Documentation
 
-[Check it here](https://github.com/KDesp73/Ansi-Text-Manipulation-Library/blob/main/Documentation.md)
+[Check it here](./Documentation.md)
 
 ## File Tree
 
 ```
 .
+├── ansi_lib.h
 ├── CMakeLists.txt
+├── Documentation.md
+├── include
+│   ├── animations.h
+│   ├── menu.h
+│   ├── menu_utils.h
+│   └── text.h
+├── LICENSE
+├── README.md
+├── scripts
+│   ├── build
+│   ├── clean
+│   └── clean_and_build
 └── src
-    ├── ansi_lib.hpp
+    ├── animations
+    │   └── animations.cpp
+    ├── main.cpp
     ├── menu
     │   ├── menu.cpp
-    │   ├── menu.hpp
-    │   ├── menu_utils.cpp
-    │   └── menu_utils.hpp
+    │   └── menu_utils.cpp
     └── text
-        ├── text.cpp
-        └── text.hpp
-
+        └── text.cpp
 ```
 
 ## License
 
-This work is published under the [GNU GENERAL PUBLIC LICENSE](https://github.com/KDesp73/Ansi-Text-Manipulation-Library/blob/main/LICENSE)
+This work is published under the [GNU GENERAL PUBLIC LICENSE](LICENSE)
