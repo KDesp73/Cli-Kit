@@ -4,11 +4,12 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 using namespace AnsiTextLib;
 using namespace std;
 
-void AnsiTextLib::menu(string title, int bgColor, vector<string> options, void (*handleOptionsFunc)(int selectedOption)){
+void Menu::menu(string title, int bgColor, vector<string> options, void (*handleOptionsFunc)(int selectedOption)){
     Text::disableInputBuffering();
 
     int numOfOptions = options.size();

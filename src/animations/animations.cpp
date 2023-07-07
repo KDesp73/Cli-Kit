@@ -7,7 +7,7 @@
 using namespace AnsiTextLib;
 using namespace std;
 
-void Animations::loadingBar(int current, int total, int barWidth = 50) {
+void Animations::loadingBar(int current, int total, int barWidth) {
     float progress = static_cast<float>(current) / total;
     int filledWidth = static_cast<int>(progress * barWidth);
 
@@ -23,7 +23,7 @@ void Animations::loadingBar(int current, int total, int barWidth = 50) {
     cout.flush();
 }
 
-void Animations::loadingAnimation(int delayMs = 100, int iterations = 10) {
+void Animations::loadingAnimation(int delayMs, int iterations) {
     const std::string animationFrames = "-\\|/";
     int frameIndex = 0;
 

@@ -1,5 +1,5 @@
 #pragma once
 
-#include "src/include/text.h"
-#include "src/include/menu.h"
-#include "src/include/animations.h"
+#include "include/text.h"
+#include "include/menu.h"
+#include "include/animations.h"
