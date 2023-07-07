@@ -3,8 +3,10 @@
 #include "text.h"
 
 #include <iostream>
+#include <string>
 
 using namespace AnsiTextLib;
+using namespace std;
 
 void AnsiTextLib::menu(string title, int bgColor, vector<string> options, void (*handleOptionsFunc)(int selectedOption)){
     Text::disableInputBuffering();

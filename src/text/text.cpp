@@ -3,8 +3,10 @@
 #include <chrono>
 #include <thread>
 #include <stdlib.h>
+#include <string>
 
 using namespace AnsiTextLib;
+using namespace std;
 
 const string Text::normal = "\e[0;39m";
 const string Text::bold = "\e[1m";

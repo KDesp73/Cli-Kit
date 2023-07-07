@@ -6,5 +6,7 @@
 using namespace std;
 
 namespace AnsiTextLib{
+namespace Menu{
     void menu(string title, int bgColor, std::vector<std::string> options, void (*handleOptionsFunc)(int selectedOption));
+};
 };
