@@ -1,24 +1,24 @@
-# Ansi-Text-Manipulation-Library
+# Cli Kit
 
-An ANSI based text manipulation library in C++ for both Linux and Windows
+An ANSI based library in C++ for both Linux and Windows, that allows users to add menus, loading animations and color to their cli applications
 
 ## Usage
 
 1. Clone the repository
 
 ```bash
-git clone https://github.com/KDesp73/Ansi-Text-Manipulation-Library
+git clone https://github.com/KDesp73/Cli-Kit
 ```
 
 2. In your `CMakeLists.txt` file include the library
 
 ```cmake
-add_subdirectory(Ansi-Text-Manipulation-Library)
+add_subdirectory(Cli-Kit)
 
-target_link_libraries(${PROJECT_NAME} AnsiTextManipulationLibrary)
+target_link_libraries(${PROJECT_NAME} CliKit)
 ```
 
-3. To use the classes and methods of this library include the `ansi_lib.hpp` file
+3. To use the classes and methods of this library include the `cli_kit.h` file
 
 ## Documentation
 
@@ -28,7 +28,7 @@ target_link_libraries(${PROJECT_NAME} AnsiTextManipulationLibrary)
 
 ```
 .
-├── ansi_lib.h
+├── cli_kit.h
 ├── CMakeLists.txt
 ├── Documentation.md
 ├── include
