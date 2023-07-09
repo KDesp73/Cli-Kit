@@ -4,7 +4,7 @@ An ANSI based library in C++ for both Linux and Windows, that allows users to ad
 
 ## Usage
 
-1. Clone the repository
+1. Clone the repository in your project folder
 
 ```bash
 git clone https://github.com/KDesp73/Cli-Kit
@@ -14,6 +14,7 @@ git clone https://github.com/KDesp73/Cli-Kit
 
 ```cmake
 add_subdirectory(Cli-Kit)
+include_directories(Cli-Kit)
 
 target_link_libraries(${PROJECT_NAME} CliKit)
 ```
