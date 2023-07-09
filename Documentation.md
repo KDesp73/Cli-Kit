@@ -1,6 +1,6 @@
 # Documentation
 
-> The Text class and the menu method are both under the `AnsiTextLib` namespace
+> Everything in this library is under the `CliKit` namespace
 
 ## `menu` Method
 
@@ -114,3 +114,11 @@ color: 0-255
 
 - `static void delayedTyping(string text)`: Prints the text with a delayed typing effect.
 - `static void clearScreen()`: Clears the screen.
+
+---
+
+## Animations
+
+- `void loadingBar(int current, int total, int barWidth = 50)`: If this method is added in a for loop it can track the progress made in the form of a loading bar
+
+- `void loadingAnimation(int delayMs = 100, int iterations = 10)`: Prints a loading animation for a fixed number of seconds
