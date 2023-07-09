@@ -14,8 +14,7 @@
 #include "text.h"
 
 using namespace std;
-using namespace AnsiTextLib;
-
+using namespace CliKit;
 
 void Text::enableInputBuffering(){
     #ifdef _WIN32

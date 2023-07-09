@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(AnsiTextManipulationLibrary)
+project(CliKit)
 set(CMAKE_CXX_STANDARD 14)
 
 include_directories(include)
@@ -15,7 +15,7 @@ set(SOURCES
 )
 
 set(INCLUDE
-    ansi_lib.h
+    cli_kit.h
     
     include/text.h
     

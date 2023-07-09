@@ -4,8 +4,9 @@
 #include <chrono>
 #include <thread>
 
-using namespace AnsiTextLib;
 using namespace std;
+using namespace CliKit;
+
 
 void Animations::loadingBar(int current, int total, int barWidth) {
     float progress = static_cast<float>(current) / total;

@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <string>
 
-using namespace AnsiTextLib;
+using namespace CliKit;
 using namespace std;
 
 const string Text::normal = "\e[0;39m";

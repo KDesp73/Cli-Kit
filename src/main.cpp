@@ -1,7 +1,8 @@
 #include <iostream>
 
-#include "ansi_lib.h"
+#include "../cli_kit.h"
 
+using namespace CliKit;
 
 void handleOptions(int option){
     switch (option){
@@ -20,9 +21,11 @@ void handleOptions(int option){
 }
 
 int main(){
-    AnsiTextLib::menu("title", 4, vector<string>{"Option 1", "Option 2", "Option 3"}, &handleOptions);
+    Animations::loadingAnimation();
 
-    cout << AnsiTextLib::Text::b_blue + "Text" + AnsiTextLib::Text::normal << endl;
+    //Menu::menu("title", 4, vector<string>{"Option 1", "Option 2", "Option 3"}, &handleOptions);
+
+    cout << Text::b_blue + "Text" + Text::normal << endl;
 
 
     return 0;

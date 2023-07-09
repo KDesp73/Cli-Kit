@@ -6,7 +6,7 @@
 #include <string>
 #include <vector>
 
-using namespace AnsiTextLib;
+using namespace CliKit;
 using namespace std;
 
 void Menu::menu(string title, int bgColor, vector<string> options, void (*handleOptionsFunc)(int selectedOption)){

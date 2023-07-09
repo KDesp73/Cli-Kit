@@ -5,7 +5,7 @@
 
 using namespace std;
 
-namespace AnsiTextLib{
+namespace CliKit{
     
 class Text{
     public:

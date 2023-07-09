@@ -1,2 +1,4 @@
 build/
+scripts/
 .cache
+src/main.cpp
