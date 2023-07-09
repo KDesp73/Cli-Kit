@@ -38,10 +38,6 @@ target_link_libraries(${PROJECT_NAME} CliKit)
 │   └── text.h
 ├── LICENSE
 ├── README.md
-├── scripts
-│   ├── build
-│   ├── clean
-│   └── clean_and_build
 └── src
     ├── animations
     │   └── animations.cpp
