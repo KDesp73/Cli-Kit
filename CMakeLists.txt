@@ -23,6 +23,7 @@ set(INCLUDE
     include/menu_utils.h
     
     include/animations.h
+    include/sound.h
 )
 
 
