@@ -12,6 +12,8 @@ set(SOURCES
     src/menu/menu_utils.cpp
     
     src/animations/animations.cpp
+    
+    src/sound/sound.cpp
 )
 
 set(INCLUDE
