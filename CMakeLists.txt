@@ -5,14 +5,6 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories(include)
 
-if(UNIX AND NOT APPLE)
-    # Find the ALSA library
-    find_package(ALSA REQUIRED)
-
-    # Link against the ALSA library
-    message("ALSA linked.")
-endif()
-
 set(SOURCES
     src/text/text.cpp
 
@@ -39,6 +31,4 @@ set(INCLUDE
 
 add_library(${PROJECT_NAME} ${SOURCES} ${INCLUDE})
 
-if(UNIX AND NOT APPLE)
-    target_link_libraries(${PROJECT_NAME} ${ALSA_LIBRARIES})
-endif()
+
