@@ -9,11 +9,7 @@ if(UNIX AND NOT APPLE)
     # Find the ALSA library
     find_package(ALSA REQUIRED)
 
-    # Add your source files
-    add_executable(YourExecutable main.cpp)
-
     # Link against the ALSA library
-    target_link_libraries(YourExecutable ${ALSA_LIBRARIES})
     message("ALSA linked.")
 endif()
 
@@ -42,3 +38,7 @@ set(INCLUDE
 
 
 add_library(${PROJECT_NAME} ${SOURCES} ${INCLUDE})
+
+if(UNIX AND NOT APPLE)
+    target_link_libraries(${PROJECT_NAME} ${ALSA_LIBRARIES})
+endif()
