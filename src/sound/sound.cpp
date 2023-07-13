@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <string>
-#include <filesystem>
+#include <sys/stat.h>
 
 #ifdef _WIN32  // Windows platform
     #include <Windows.h>
@@ -14,12 +14,17 @@
 using namespace std;
 using namespace CliKit;
 
+bool pathExists(string path){
+    struct stat buffer;
+    return (stat(path.c_str(), &buffer) == 0);
+}
+
 void Sound::beep(){
     cerr << "Not implemented yet." << endl;
 }
 
 void Sound::playSound(string path){
-    if(!filesystem::exists(path)) {
+    if(!pathExists(path)) {
         cerr << "Invalid Path." << endl;
         return;
     }
@@ -35,7 +40,7 @@ void Sound::playSound(string path){
 
     snd_pcm_set_params(handle, SND_PCM_FORMAT_S16_LE, SND_PCM_ACCESS_RW_INTERLEAVED, 2, 44100, 1, 500000);
 
-    FILE *file = fopen(path, "r");
+    FILE *file = fopen(path.c_str(), "r");
     if (file == NULL) {
         cerr << "Failed to load file." << endl;
         return;

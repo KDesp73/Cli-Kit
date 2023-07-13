@@ -5,6 +5,18 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories(include)
 
+if(UNIX AND NOT APPLE)
+    # Find the ALSA library
+    find_package(ALSA REQUIRED)
+
+    # Add your source files
+    add_executable(YourExecutable main.cpp)
+
+    # Link against the ALSA library
+    target_link_libraries(YourExecutable ${ALSA_LIBRARIES})
+    message("ALSA linked.")
+endif()
+
 set(SOURCES
     src/text/text.cpp
 
