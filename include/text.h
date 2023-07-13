@@ -52,6 +52,8 @@ class Text{
         static void clearScreen();
         static void disableInputBuffering();
         static void enableInputBuffering();
+        static void hideCursor();
+        static void showCursor();
 };
 
 };

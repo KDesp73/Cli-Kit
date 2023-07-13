@@ -70,3 +70,12 @@ void Text::clearScreen() {
     system("clear"); // Clear screen for Linux and macOS
 #endif
 }
+
+void Text::hideCursor(){
+    cout << "\e[?25l";
+}
+
+void Text::showCursor(){
+    cout << "\e[?25h";
+    
+}
