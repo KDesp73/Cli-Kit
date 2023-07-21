@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceCliKit_1_1Animations" kind="namespace" language="C++">
+    <compoundname>CliKit::Animations</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="animations_8h_1a409b2d574d4de37d79b45f107fd15412" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CliKit::Animations::loadingBar</definition>
+        <argsstring>(int current, int total, int barWidth=50)</argsstring>
+        <name>loadingBar</name>
+        <param>
+          <type>int</type>
+          <declname>current</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>barWidth</declname>
+          <defval>50</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/animations.h" line="8" column="10" declfile="include/animations.h" declline="8" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="animations_8h_1a5efc29ddf335201c968f50db89ddac8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CliKit::Animations::loadingAnimation</definition>
+        <argsstring>(int delayMs=100, int iterations=10)</argsstring>
+        <name>loadingAnimation</name>
+        <param>
+          <type>int</type>
+          <declname>delayMs</declname>
+          <defval>100</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iterations</declname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/animations.h" line="9" column="10" declfile="include/animations.h" declline="9" declcolumn="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/animations.h" line="7" column="1"/>
+  </compounddef>
+</doxygen>

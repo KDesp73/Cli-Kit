@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceCliKit" kind="namespace" language="C++">
+    <compoundname>CliKit</compoundname>
+    <innerclass refid="classCliKit_1_1Text" prot="public">CliKit::Text</innerclass>
+    <innernamespace refid="namespaceCliKit_1_1Animations">CliKit::Animations</innernamespace>
+    <innernamespace refid="namespaceCliKit_1_1Menu">CliKit::Menu</innernamespace>
+    <innernamespace refid="namespaceCliKit_1_1Sound">CliKit::Sound</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/animations.h" line="6" column="1"/>
+  </compounddef>
+</doxygen>

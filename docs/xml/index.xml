@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="classCliKit_1_1Text" kind="class"><name>CliKit::Text</name>
+    <member refid="classCliKit_1_1Text_1a8aac60fb428d79cf0ae46cf8024cd290" kind="variable"><name>normal</name></member>
+    <member refid="classCliKit_1_1Text_1a0ae1eedb00a55bcf4df1d407ff5ba0a8" kind="variable"><name>bold</name></member>
+    <member refid="classCliKit_1_1Text_1abe4452fea94a80a5f6239f2cccc21790" kind="variable"><name>underline</name></member>
+    <member refid="classCliKit_1_1Text_1a2caf0d7cfe624b336a6d46dfbeb081d2" kind="variable"><name>italic</name></member>
+    <member refid="classCliKit_1_1Text_1a604c11dab8f5bca3e4cf6d59c237d305" kind="variable"><name>clear</name></member>
+    <member refid="classCliKit_1_1Text_1aa793bd42c7f0b9981f49074c3f703a79" kind="variable"><name>erase_line</name></member>
+    <member refid="classCliKit_1_1Text_1a6b1e5f4d2d428c7d1573bac9769a42a2" kind="variable"><name>black</name></member>
+    <member refid="classCliKit_1_1Text_1ab542eb415d50bfd22ee60be38f1d3b31" kind="variable"><name>red</name></member>
+    <member refid="classCliKit_1_1Text_1a97764f4a8bcc0fcf9edd662f36a36501" kind="variable"><name>green</name></member>
+    <member refid="classCliKit_1_1Text_1a232526e669a5184660157e8440499753" kind="variable"><name>yellow</name></member>
+    <member refid="classCliKit_1_1Text_1a105e636b0d18a47d7ad14bef7edc2a8d" kind="variable"><name>blue</name></member>
+    <member refid="classCliKit_1_1Text_1a848bd244b11674c52ffaeb276438810b" kind="variable"><name>purple</name></member>
+    <member refid="classCliKit_1_1Text_1a76ef7278446ea31c018a59b71c6a94e1" kind="variable"><name>cyan</name></member>
+    <member refid="classCliKit_1_1Text_1a612ed7d396ccdcbd56fc199e8623b794" kind="variable"><name>lgrey</name></member>
+    <member refid="classCliKit_1_1Text_1a13dfd15a76fae33508ee1fd9a0aa5a8d" kind="variable"><name>dgrey</name></member>
+    <member refid="classCliKit_1_1Text_1ae2013307b14dc3f2ee613792ac44a500" kind="variable"><name>u_black</name></member>
+    <member refid="classCliKit_1_1Text_1ae217be2daf738dc1fb681a861db9fc96" kind="variable"><name>u_red</name></member>
+    <member refid="classCliKit_1_1Text_1a0cc2ba600a2dc4fcf984e182a81b2c94" kind="variable"><name>u_green</name></member>
+    <member refid="classCliKit_1_1Text_1a609a94956b406e8a7dd8c886e46d57a0" kind="variable"><name>u_yellow</name></member>
+    <member refid="classCliKit_1_1Text_1a12ae094c14d236d5f6fdde42fa2fa20c" kind="variable"><name>u_blue</name></member>
+    <member refid="classCliKit_1_1Text_1a005c2bba0e3f5d9f69876d91f125de36" kind="variable"><name>u_purple</name></member>
+    <member refid="classCliKit_1_1Text_1adc43e60954e5826365021fe131ecadfc" kind="variable"><name>u_cyan</name></member>
+    <member refid="classCliKit_1_1Text_1ae27b8e31065bad589b7182d0d3d1daf9" kind="variable"><name>u_lgrey</name></member>
+    <member refid="classCliKit_1_1Text_1a0f07a7d9de9c329d66bee2983075275a" kind="variable"><name>u_dgrey</name></member>
+    <member refid="classCliKit_1_1Text_1a95703badf84ab99ba23e4f29bee071c5" kind="variable"><name>b_black</name></member>
+    <member refid="classCliKit_1_1Text_1a643d9105ca4996739f03d9f877fbcd33" kind="variable"><name>b_red</name></member>
+    <member refid="classCliKit_1_1Text_1a8936b455b30c3f6aa5f51a76a1c8174a" kind="variable"><name>b_green</name></member>
+    <member refid="classCliKit_1_1Text_1ad4bfeba0e3f86bcbf9a2514ed0596676" kind="variable"><name>b_yellow</name></member>
+    <member refid="classCliKit_1_1Text_1a1359948be895d6f90491f75a73f3185a" kind="variable"><name>b_blue</name></member>
+    <member refid="classCliKit_1_1Text_1a0fae9bab8ecae9d0963cd97b32fe2990" kind="variable"><name>b_purple</name></member>
+    <member refid="classCliKit_1_1Text_1a31e2f342f54c3b72e5ae04e334548189" kind="variable"><name>b_cyan</name></member>
+    <member refid="classCliKit_1_1Text_1a71ceffbf3e86f653d01035755dc82dab" kind="variable"><name>b_lgrey</name></member>
+    <member refid="classCliKit_1_1Text_1a1327f300099abc3d443ac14e4741b267" kind="variable"><name>b_dgrey</name></member>
+    <member refid="classCliKit_1_1Text_1abc904dded233482e9e9268e79597cd1c" kind="function"><name>color</name></member>
+    <member refid="classCliKit_1_1Text_1a78aa5ffdcd284e705b189e5c691bf546" kind="function"><name>delayedTyping</name></member>
+    <member refid="classCliKit_1_1Text_1a8ed80a261b134fa3d1da0d3a4018b7d6" kind="function"><name>clearScreen</name></member>
+    <member refid="classCliKit_1_1Text_1added85250da5eb752f641a88e95b0478" kind="function"><name>disableInputBuffering</name></member>
+    <member refid="classCliKit_1_1Text_1ab0dac3953279664a0805fcf64d5c861a" kind="function"><name>enableInputBuffering</name></member>
+    <member refid="classCliKit_1_1Text_1a0dd8bd50122cf47ab91d551e4ecff3a2" kind="function"><name>hideCursor</name></member>
+    <member refid="classCliKit_1_1Text_1a8b6017d6f0f17c82efa2d2b1764dafd1" kind="function"><name>showCursor</name></member>
+  </compound>
+  <compound refid="namespaceCliKit" kind="namespace"><name>CliKit</name>
+  </compound>
+  <compound refid="namespaceCliKit_1_1Animations" kind="namespace"><name>CliKit::Animations</name>
+    <member refid="animations_8h_1a409b2d574d4de37d79b45f107fd15412" kind="function"><name>loadingBar</name></member>
+    <member refid="animations_8h_1a5efc29ddf335201c968f50db89ddac8f" kind="function"><name>loadingAnimation</name></member>
+  </compound>
+  <compound refid="namespaceCliKit_1_1Menu" kind="namespace"><name>CliKit::Menu</name>
+    <member refid="menu_8h_1abc70b81a1c8aae1b065859554a641de5" kind="function"><name>menu</name></member>
+  </compound>
+  <compound refid="namespaceCliKit_1_1Sound" kind="namespace"><name>CliKit::Sound</name>
+    <member refid="sound_8h_1ab7e5997d0c0d8784db6357fc2b6276be" kind="function"><name>beep</name></member>
+    <member refid="sound_8h_1a8d5d69e0cb7b3d8b12052e14aaa7d0f7" kind="function"><name>playSound</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="animations_8h" kind="file"><name>animations.h</name>
+  </compound>
+  <compound refid="menu_8h" kind="file"><name>menu.h</name>
+  </compound>
+  <compound refid="menu__utils_8h" kind="file"><name>menu_utils.h</name>
+    <member refid="menu__utils_8h_1a021df7057dfa41748853c75f6d1e45c3" kind="variable"><name>ENTER</name></member>
+    <member refid="menu__utils_8h_1ac58327b7b857c0d4c71c07aa602ace58" kind="variable"><name>UP</name></member>
+    <member refid="menu__utils_8h_1a434e4725f04fa366ed1341f04d38521d" kind="variable"><name>DOWN</name></member>
+    <member refid="menu__utils_8h_1a873df1339fbba232cb8943ac591e2a2c" kind="function"><name>addSpaces</name></member>
+    <member refid="menu__utils_8h_1a3b5681b65f0de22076b4c39a437af8f7" kind="function"><name>printOption</name></member>
+    <member refid="menu__utils_8h_1a008676864537cd7b7dd80612e510af42" kind="function"><name>handleKeys</name></member>
+  </compound>
+  <compound refid="sound_8h" kind="file"><name>sound.h</name>
+  </compound>
+  <compound refid="text_8h" kind="file"><name>text.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>

@@ -5,6 +5,8 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories(include)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 set(SOURCES
     src/text/text.cpp
 
