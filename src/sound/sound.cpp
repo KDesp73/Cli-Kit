@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <string>
+#include <algorithm>
 #include <sys/stat.h>
 
 #ifdef _WIN32  // Windows platform
@@ -14,6 +15,11 @@ using namespace std;
 using namespace CliKit;
 
 bool pathExists(string path){
+#ifdef _WIN32
+	replace(path.begin(), path.end(), '/', '\\');
+#endif
+
+
     struct stat buffer;
     return (stat(path.c_str(), &buffer) == 0);
 }
@@ -29,7 +35,9 @@ void Sound::playSound(string path){
     }
 
 #ifdef _WIN32
-    PlaySound(TEXT("sound.wav"), NULL, SND_FILENAME);
+    // Not implemented for windows yet
+	
+	//PlaySound(TEXT("sound.wav"), NULL, SND_FILENAME);
 #else
     system(("paplay " + path).c_str());
 #endif
