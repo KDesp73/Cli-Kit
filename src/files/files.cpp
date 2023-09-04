@@ -3,6 +3,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <unistd.h>
 #include <vector>
 #include <cstring>
 #include <dirent.h>
@@ -113,7 +114,7 @@ void Files::writeLineToFile(const std::string& filename, int lineNumber, const s
 std::vector<string> Files::listDirectory(const std::string &path){
     std::vector<std::string> filenames;
 
-    DIR* dir = opendir(directory_path.c_str());
+    DIR* dir = opendir(path.c_str());
     if (dir) {
         dirent* entry;
         while ((entry = readdir(dir)) != nullptr) {
@@ -123,7 +124,7 @@ std::vector<string> Files::listDirectory(const std::string &path){
         }
         closedir(dir);
     } else {
-        std::cerr << "Error: Unable to open directory " << directory_path << std::endl;
+        std::cerr << "Error: Unable to open directory " << path << std::endl;
     }
 
     return filenames;
