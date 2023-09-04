@@ -30,7 +30,7 @@ void Sound::beep(){
 
 void Sound::playSound(string path){
     if(!pathExists(path)) {
-        //cerr << "Invalid Path." << endl;
+        cerr << "Invalid Path." << endl;
         return;
     }
 
