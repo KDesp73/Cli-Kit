@@ -4,3 +4,4 @@
 #include "include/menu.h"
 #include "include/animations.h"
 #include "include/sound.h"
+#include "include/files.h"
