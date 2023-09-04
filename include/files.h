@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <vector>
 
 namespace CliKit{
 namespace Files{
@@ -10,5 +11,6 @@ namespace Files{
     void appendFile(const std::string& filename, const std::string& data);
     std::string readLineFromFile(const std::string& filename, int lineNumber);
     void writeLineToFile(const std::string& filename, int lineNumber, const std::string& lineToWrite);
+    std::vector<std::string> listDirectory(const std::string& path);
 };
 };

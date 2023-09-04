@@ -4,6 +4,8 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <cstring>
+#include <dirent.h>
 
 using namespace CliKit;
 
@@ -105,4 +107,23 @@ void Files::writeLineToFile(const std::string& filename, int lineNumber, const s
     }
     
     outFile.close();
+}
+
+std::vector<string> Files::listDirectory(const std::string &path){
+    std::vector<std::string> filenames;
+
+    DIR* dir = opendir(directory_path.c_str());
+    if (dir) {
+        dirent* entry;
+        while ((entry = readdir(dir)) != nullptr) {
+            if (entry->d_type == DT_REG) {
+                filenames.push_back(entry->d_name);
+            }
+        }
+        closedir(dir);
+    } else {
+        std::cerr << "Error: Unable to open directory " << directory_path << std::endl;
+    }
+
+    return filenames;
 }
