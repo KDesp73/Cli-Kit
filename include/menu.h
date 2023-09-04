@@ -7,6 +7,6 @@ using namespace std;
 
 namespace CliKit{
 namespace Menu{
-    void menu(string title, int bgColor, std::vector<std::string> options, void (*handleOptionsFunc)(int selectedOption));
+    int menu(string title, int bgColor, std::vector<std::string> options);
 };
 };

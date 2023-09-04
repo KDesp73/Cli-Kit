@@ -9,7 +9,7 @@
 using namespace CliKit;
 using namespace std;
 
-void Menu::menu(string title, int bgColor, vector<string> options, void (*handleOptionsFunc)(int selectedOption)){
+int Menu::menu(string title, int bgColor, vector<string> options){
     Text::disableInputBuffering();
 
     int numOfOptions = options.size();
@@ -24,6 +24,7 @@ void Menu::menu(string title, int bgColor, vector<string> options, void (*handle
     }
 
     while (menuActive) {
+        // TODO remove only menu not the entire screen
         Text::clearScreen();
         cout << title << endl;
 
@@ -45,10 +46,10 @@ void Menu::menu(string title, int bgColor, vector<string> options, void (*handle
                 menuActive = false;
                 Text::clearScreen();
                 Text::enableInputBuffering();
-                handleOptionsFunc(selectedItem);
-                break;
+                return selectedItem;
         }
 
     }
     Text::enableInputBuffering();
+    return -1;
 }

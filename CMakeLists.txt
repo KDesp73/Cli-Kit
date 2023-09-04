@@ -16,6 +16,8 @@ set(SOURCES
     src/animations/animations.cpp
     
     src/sound/sound.cpp
+
+    src/files/files.cpp
 )
 
 set(INCLUDE
@@ -28,6 +30,7 @@ set(INCLUDE
     
     include/animations.h
     include/sound.h
+    include/files.h
 )
 
 
