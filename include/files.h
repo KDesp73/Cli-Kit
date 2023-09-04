@@ -12,5 +12,6 @@ namespace Files{
     std::string readLineFromFile(const std::string& filename, int lineNumber);
     void writeLineToFile(const std::string& filename, int lineNumber, const std::string& lineToWrite);
     std::vector<std::string> listDirectory(const std::string& path);
+	std::string getExecutablePath();
 };
 };

@@ -8,6 +8,7 @@
 #include <dirent.h>
 
 using namespace CliKit;
+using namespace std;
 
 // Function to check if a file exists
 bool Files::fileExists(const std::string& filename) {
@@ -126,4 +127,17 @@ std::vector<string> Files::listDirectory(const std::string &path){
     }
 
     return filenames;
+}
+
+
+std::string Files::getExecutablePath() {
+    std::vector<char> buffer(1024);
+    ssize_t len = readlink("/proc/self/exe", buffer.data(), buffer.size());
+    if (len != -1) {
+        buffer[len] = '\0';
+        return std::string(buffer.data());
+    } else {
+        // Handle error
+        return "";
+    }
 }
