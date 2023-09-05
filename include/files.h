@@ -13,5 +13,6 @@ namespace Files{
     void writeLineToFile(const std::string& filename, int lineNumber, const std::string& lineToWrite);
     std::vector<std::string> listDirectory(const std::string& path);
 	std::string getExecutablePath();
+    int countLinesInFile(const std::string& filename);
 };
 };

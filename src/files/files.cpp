@@ -142,3 +142,20 @@ std::string Files::getExecutablePath() {
         return "";
     }
 }
+
+int Files::countLinesInFile(const std::string& filename) {
+    std::ifstream file(filename);
+    if (!file) {
+        std::cerr << "Error: Unable to open the file " << filename << std::endl;
+        return -1; // Return -1 to indicate an error
+    }
+
+    int lineCount = 0;
+    std::string line;
+
+    while (std::getline(file, line)) {
+        lineCount++;
+    }
+
+    return lineCount;
+}
