@@ -54,7 +54,7 @@ void Text::disableInputBuffering(){
     cout << "\e[?25l"; // Hide the cursor
 }
 
-int CliKit::handleKeys() {
+int TuiKit::handleKeys() {
     #ifdef _WIN32
         switch (_getch()) {
             case 13:
@@ -76,7 +76,7 @@ int CliKit::handleKeys() {
     #endif
 }
 
-string CliKit::addSpaces(string word, int length) {
+string TuiKit::addSpaces(string word, int length) {
     if (length < word.size()) return "WRONG";
 
     while (word.size() < length) {
@@ -85,7 +85,7 @@ string CliKit::addSpaces(string word, int length) {
     return word;
 }
 
-void CliKit::printOption(int selectedItem, int index, int color, string option) {
+void TuiKit::printOption(int selectedItem, int index, int color, string option) {
     std::cout << (selectedItem == index ? Text::color("bg", color) +
                                               option + Text::normal
                                         : option)
