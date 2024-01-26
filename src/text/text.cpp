@@ -1,6 +1,7 @@
 #include "text.h"
 
 #include <chrono>
+#include <cstdio>
 #include <thread>
 #include <stdlib.h>
 #include <string>
@@ -77,5 +78,13 @@ void Text::hideCursor(){
 
 void Text::showCursor(){
     cout << "\e[?25h";
-    
+}
+
+void Text::printColorTable(){
+    for(int i = 0; i < 256; i++){
+        if(i % 21 == 0) std::cout << endl;
+        
+        printf("%s%2d ", Text::color("fg", i).c_str(), i);
+    }
+    std::cout << Text::normal << std::endl;
 }

@@ -54,6 +54,7 @@ class Text{
         static void enableInputBuffering();
         static void hideCursor();
         static void showCursor();
+        static void printColorTable();
 };
 
 };

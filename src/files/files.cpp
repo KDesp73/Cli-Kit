@@ -5,7 +5,6 @@
 #include <string>
 #include <unistd.h>
 #include <vector>
-#include <cstring>
 #include <dirent.h>
 
 using namespace TuiKit;
