@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(CliKit)
+project(TuiKit)
 set(CMAKE_CXX_STANDARD 14)
 
 include_directories(include)
@@ -21,7 +21,7 @@ set(SOURCES
 )
 
 set(INCLUDE
-    cli_kit.h
+    tui_kit.h
     
     include/text.h
     
