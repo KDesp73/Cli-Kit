@@ -84,7 +84,7 @@ void Text::printColorTable(){
     for(int i = 0; i < 256; i++){
         if(i % 21 == 0) std::cout << endl;
         
-        printf("%s%2d ", Text::color("fg", i).c_str(), i);
+        printf("%s%3d ", Text::color("fg", i).c_str(), i);
     }
     std::cout << Text::normal << std::endl;
 }
