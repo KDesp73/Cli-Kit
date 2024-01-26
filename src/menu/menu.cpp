@@ -6,7 +6,7 @@
 #include <string>
 #include <vector>
 
-using namespace CliKit;
+using namespace TuiKit;
 using namespace std;
 
 int Menu::menu(string title, int bgColor, vector<string> options){

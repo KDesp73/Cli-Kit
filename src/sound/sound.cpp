@@ -12,7 +12,7 @@
 #endif
 
 using namespace std;
-using namespace CliKit;
+using namespace TuiKit;
 
 bool pathExists(string path){
 #ifdef _WIN32

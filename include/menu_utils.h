@@ -5,7 +5,7 @@
 
 using namespace std;
 
-namespace CliKit{
+namespace TuiKit{
     string addSpaces(string word, int length);
     void printOption(int selectedItem, int index, int color, string option);
     int handleKeys();

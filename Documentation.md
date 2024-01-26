@@ -1,6 +1,6 @@
 # Documentation
 
-> Everything in this library is under the `CliKit` namespace
+> Everything in this library is under the `TuiKit` namespace
 
 ## `menu` Method
 
@@ -33,27 +33,11 @@ To use the menu method, follow these steps:
 #include <iostream>
 #include <vector>
 
-#include "cli_kit.h"
-
-void handleOption(int selectedOption) {
-    switch (option){
-        case 0:
-            cout << "Option 1 selected" << endl;
-            break;
-        case 1:
-            cout << "Option 2 selected" << endl;
-            break;
-        case 3:
-            cout << "Option 3 selected" << endl;
-            break;
-        default:
-            break;
-    }
-}
+#include "tui_kit.h"
 
 int main() {
     std::vector<std::string> options = {"Option 1", "Option 2", "Option 3"};
-    AnsiTextLib::menu(4, options, &handleOption);
+    int option  = TuiKit::menu(4, options);
 
     return 0;
 }

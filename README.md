@@ -1,4 +1,4 @@
-# Cli Kit
+# tui-kit
 
 An ANSI based library in C++ for both Linux and Windows, that allows users to add menus, loading animations and color to their cli applications
 
@@ -7,19 +7,19 @@ An ANSI based library in C++ for both Linux and Windows, that allows users to ad
 1. Clone the repository in your project folder
 
 ```bash
-git clone https://github.com/KDesp73/Cli-Kit
+git clone --depth=1 git@github.com:KDesp73/tui-kit.git
 ```
 
 2. In your `CMakeLists.txt` file include the library
 
 ```cmake
-add_subdirectory(Cli-Kit)
-include_directories(Cli-Kit)
+add_subdirectory(tui-kit)
+include_directories(tui-kit)
 
-target_link_libraries(${PROJECT_NAME} CliKit)
+target_link_libraries(${PROJECT_NAME} TuiKit)
 ```
 
-3. To use the classes and methods of this library include the `cli_kit.h` file
+3. To use the classes and methods of this library include the `tui_kit.h` file
 
 ## Documentation
 
@@ -29,7 +29,7 @@ target_link_libraries(${PROJECT_NAME} CliKit)
 
 ```
 .
-├── cli_kit.h
+├── tui_kit.h
 ├── CMakeLists.txt
 ├── Documentation.md
 ├── include

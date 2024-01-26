@@ -8,7 +8,7 @@
 #include <cstring>
 #include <dirent.h>
 
-using namespace CliKit;
+using namespace TuiKit;
 using namespace std;
 
 // Function to check if a file exists

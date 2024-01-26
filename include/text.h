@@ -5,7 +5,7 @@
 
 using namespace std;
 
-namespace CliKit{
+namespace TuiKit{
     
 class Text{
     public:

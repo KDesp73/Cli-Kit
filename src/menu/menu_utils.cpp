@@ -14,7 +14,7 @@
 #include "text.h"
 
 using namespace std;
-using namespace CliKit;
+using namespace TuiKit;
 
 void Text::enableInputBuffering(){
     #ifdef _WIN32

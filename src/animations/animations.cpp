@@ -5,7 +5,7 @@
 #include <thread>
 
 using namespace std;
-using namespace CliKit;
+using namespace TuiKit;
 
 
 void Animations::loadingBar(int current, int total, int barWidth) {

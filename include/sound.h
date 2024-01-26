@@ -4,7 +4,7 @@
 
 using namespace std;
 
-namespace CliKit{
+namespace TuiKit{
 namespace Sound{
     void beep(); 
     void playSound(string path);

@@ -5,7 +5,7 @@
 
 using namespace std;
 
-namespace CliKit{
+namespace TuiKit{
 namespace Menu{
     int menu(string title, int bgColor, std::vector<std::string> options);
 };
