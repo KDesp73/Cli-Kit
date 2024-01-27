@@ -6,6 +6,8 @@
 #include <unistd.h>
 #include <vector>
 #include <dirent.h>
+#include <sys/stat.h>
+
 
 using namespace TuiKit;
 using namespace std;
@@ -157,4 +159,26 @@ int Files::countLinesInFile(const std::string& filename) {
     }
 
     return lineCount;
+}
+
+int Files::exists(const std::string& path){
+	struct stat buffer;   
+	return (stat (path.c_str(), &buffer) == 0); 
+}
+
+std::vector<std::string> Files::readFileLines(const std::string& filename) {
+    std::vector<std::string> lines;
+    std::ifstream file(filename);
+
+    if (file.is_open()) {
+        std::string line;
+        while (std::getline(file, line)) {
+            lines.push_back(line);
+        }
+        file.close();
+    } else {
+        std::cerr << "Unable to open file: " << filename << std::endl;
+    }
+
+    return lines;
 }

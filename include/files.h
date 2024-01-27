@@ -14,5 +14,7 @@ namespace Files{
     std::vector<std::string> listDirectory(const std::string& path);
 	std::string getExecutablePath();
     int countLinesInFile(const std::string& filename);
+	int exists(const std::string& name);
+	std::vector<std::string> readFileLines(const std::string& filename);
 };
 };
