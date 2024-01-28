@@ -1,6 +1,6 @@
 # tui-kit
 
-An ANSI based library in C++ for both Linux and Windows, that allows users to add menus, loading animations and color to their cli applications
+An ANSI based library in C++ for both Linux and Windows, that allows users to add menus, loading animations and color to their tui applications
 
 ## Usage
 
