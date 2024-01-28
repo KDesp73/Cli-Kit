@@ -77,7 +77,7 @@ int TuiKit::handleKeys() {
 }
 
 string TuiKit::addSpaces(string word, int length) {
-    if (length < word.size()) return "WRONG";
+    if (length < word.size()) return "Too long";
 
     while (word.size() < length) {
         word += " ";
